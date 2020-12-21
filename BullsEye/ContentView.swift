@@ -27,9 +27,14 @@ struct ContentView: View {
         Text("100")
           .bold()
       }
-      Button(action: {}) {
-        Text("Hit me")
-      }
+      Button(
+        action: {
+          print("Hello, SwiftUI!")
+        },
+        label: {
+          Text("Hit me")
+        }
+      )
     }
   }
 }
