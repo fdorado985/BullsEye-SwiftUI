@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+  @State private var alertIsVisible: Bool = false
+
   var body: some View {
     VStack {
       Text("🎯🎯🎯\nPUT THE BULLSEYE AS CLOSE AS YOU TO")
@@ -30,6 +32,7 @@ struct ContentView: View {
       Button(
         action: {
           print("Hello, SwiftUI!")
+          self.alertIsVisible = true
         },
         label: {
           Text("Hit me")
