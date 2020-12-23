@@ -26,7 +26,8 @@ opt_in_rules:
   - fatal_error_message
   - first_where
   - force_unwrapping
-  - implicitly_unwrapped_optional
+  - implicitly_unwrapped_optional:
+      excluded: ".*Test\\.swift"
   - indentation_width
   - last_where
   - legacy_random
@@ -37,7 +38,8 @@ opt_in_rules:
   - multiline_parameters
   - multiline_parameters_brackets
   - operator_usage_whitespace
-  - overridden_super_call
+  - overridden_super_call:
+      excluded: ".*Test\\.swift"
   - pattern_matching_keywords
   - prefer_self_type_over_type_of_self
   - redundant_nil_coalescing
