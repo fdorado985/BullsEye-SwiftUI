@@ -10,6 +10,7 @@
 		A92C21E02593131D0003F279 /* BullsEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C21DF2593131D0003F279 /* BullsEyeTests.swift */; };
 		A92C21EA2593C0730003F279 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C21E92593C0730003F279 /* TextViews.swift */; };
 		A92C21EE2593E4B50003F279 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C21ED2593E4B50003F279 /* Shapes.swift */; };
+		A92C21F22593E7750003F279 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C21F12593E7750003F279 /* RoundedViews.swift */; };
 		A984AFB3258FE12C007D8253 /* BullsEyeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984AFB2258FE12C007D8253 /* BullsEyeApp.swift */; };
 		A984AFB5258FE12C007D8253 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984AFB4258FE12C007D8253 /* ContentView.swift */; };
 		A984AFB7258FE12C007D8253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A984AFB6258FE12C007D8253 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		A92C21E12593131D0003F279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A92C21E92593C0730003F279 /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
 		A92C21ED2593E4B50003F279 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		A92C21F12593E7750003F279 /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 		A984AFAF258FE12C007D8253 /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A984AFB2258FE12C007D8253 /* BullsEyeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeApp.swift; sourceTree = "<group>"; };
 		A984AFB4258FE12C007D8253 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				A984AFB4258FE12C007D8253 /* ContentView.swift */,
 				A92C21E92593C0730003F279 /* TextViews.swift */,
 				A92C21ED2593E4B50003F279 /* Shapes.swift */,
+				A92C21F12593E7750003F279 /* RoundedViews.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92C21F22593E7750003F279 /* RoundedViews.swift in Sources */,
 				A984AFB5258FE12C007D8253 /* ContentView.swift in Sources */,
 				A92C21EA2593C0730003F279 /* TextViews.swift in Sources */,
 				A92C21EE2593E4B50003F279 /* Shapes.swift in Sources */,
