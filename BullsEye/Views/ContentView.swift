@@ -19,6 +19,7 @@ struct ContentView: View {
 
       VStack {
         Text("🎯🎯🎯\nPut the Bull's Eye as close as you can to".uppercased())
+          .foregroundColor(Color("TextColor"))
           .bold()
           .kerning(2.0)
           .multilineTextAlignment(.center)
@@ -27,14 +28,17 @@ struct ContentView: View {
           .padding(.leading, 30.0)
           .padding(.trailing, 30.0)
         Text("\(game.target)")
+          .foregroundColor(Color("TextColor"))
           .fontWeight(.black)
           .kerning(-1.0)
           .font(.largeTitle)
         HStack {
           Text("1")
+            .foregroundColor(Color("TextColor"))
             .bold()
           Slider(value: $sliderValue, in: 1.0...100.0)
           Text("100")
+            .foregroundColor(Color("TextColor"))
             .bold()
         }
         .padding()
@@ -79,6 +83,16 @@ struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     ContentView()
     ContentView()
+      .preferredColorScheme(.dark)
+    ContentView()
+      .previewLayout(
+        .fixed(
+          width: 812,
+          height: 375
+        )
+      )
+    ContentView()
+      .preferredColorScheme(.dark)
       .previewLayout(
         .fixed(
           width: 812,
