@@ -18,20 +18,8 @@ struct ContentView: View {
         .edgesIgnoringSafeArea(.all)
 
       VStack {
-        Text("🎯🎯🎯\nPut the Bull's Eye as close as you can to".uppercased())
-          .foregroundColor(Color("TextColor"))
-          .bold()
-          .kerning(2.0)
-          .multilineTextAlignment(.center)
-          .lineSpacing(4.0)
-          .font(.footnote)
-          .padding(.leading, 30.0)
-          .padding(.trailing, 30.0)
-        Text("\(game.target)")
-          .foregroundColor(Color("TextColor"))
-          .fontWeight(.black)
-          .kerning(-1.0)
-          .font(.largeTitle)
+        InstructionsView(game: $game)
+
         HStack {
           Text("1")
             .foregroundColor(Color("TextColor"))
@@ -75,6 +63,20 @@ struct ContentView: View {
           )
         }
       }
+    }
+  }
+}
+
+struct InstructionsView: View {
+  @Binding var game: Game
+
+  var body: some View {
+    VStack {
+      InstructionText(text: "🎯🎯🎯\nPut the Bull's Eye as close as you can to")
+        .padding(.leading, 30.0)
+        .padding(.trailing, 30.0)
+
+      BigNumberText(text: "\(game.target)")
     }
   }
 }
