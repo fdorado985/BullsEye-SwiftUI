@@ -5,3 +5,15 @@
 [![license-mit](https://img.shields.io/badge/license-MIT-green)](https://en.wikipedia.org/wiki/MIT_License)
 
 This simple game will help you to dive in some of SwiftUI features, the main goal of the game is to scroll the target closer the given value.
+
+# 1-app-from-scratch
+
+All the process 'til here will cover creating an app from scratch with the basic functionality to make it work, the design is just plan, cute, but plain to make it look just good, the idea was to see and learn about `States`, `Bindings`, `SwiftUI`, how the sync works between code and UI, how to organize our code files, `Unit Test`, how to backup our code through tests to feel confident when refactor.
+
+| SS01 | SS02 |
+| ---- | ---- |
+| ![ss01](.screenshots/ss01.png) | ![ss02](.screenshots/ss02.png) |
+
+| SS03 | SS04 |
+| ---- | ---- |
+| ![ss03](.screenshots/ss03.png) | ![ss04](.screenshots/ss04.png) |
