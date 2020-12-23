@@ -14,7 +14,7 @@ struct ContentView: View {
 
   var body: some View {
     VStack {
-      Text("🎯🎯🎯\nPUT THE BULLSEYE AS CLOSE AS YOU TO")
+      Text("🎯🎯🎯\nPut the Bull's Eye as close as you can to".uppercased())
         .bold()
         .kerning(2.0)
         .multilineTextAlignment(.center)
@@ -38,12 +38,15 @@ struct ContentView: View {
           alertIsVisible = true
         },
         label: {
-          Text("Hit me")
+          Text("Hit me!".uppercased())
+            .bold()
+            .font(.title3)
         }
       )
       .padding(20.0)
       .background(Color.blue)
       .foregroundColor(.white)
+      .cornerRadius(21.0)
       .alert(isPresented: $alertIsVisible) {
         let roundedValue = Int(sliderValue.rounded())
         return Alert(
