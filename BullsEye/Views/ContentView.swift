@@ -31,6 +31,7 @@ struct ContentView: View {
         Text("100")
           .bold()
       }
+      .padding()
 
       Button(
         action: {
