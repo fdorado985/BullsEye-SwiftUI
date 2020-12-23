@@ -41,6 +41,9 @@ struct ContentView: View {
           Text("Hit me")
         }
       )
+      .padding(20.0)
+      .background(Color.blue)
+      .foregroundColor(.white)
       .alert(isPresented: $alertIsVisible) {
         let roundedValue = Int(sliderValue.rounded())
         return Alert(
