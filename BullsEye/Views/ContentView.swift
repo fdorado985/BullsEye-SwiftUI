@@ -14,7 +14,7 @@ struct ContentView: View {
 
   var body: some View {
     ZStack {
-      Color(red: 243.0 / 255.0, green: 248 / 255.0, blue: 253 / 255.0, opacity: 1.0)
+      Color("BackgroundColor")
         .edgesIgnoringSafeArea(.all)
 
       VStack {
@@ -51,7 +51,12 @@ struct ContentView: View {
           }
         )
         .padding(20.0)
-        .background(Color.blue)
+        .background(
+          ZStack {
+            Color("ButtonColor")
+            LinearGradient(gradient: Gradient(colors: [Color.white.opacity(0.3), Color.clear]), startPoint: .top, endPoint: .bottom)
+          }
+        )
         .foregroundColor(.white)
         .cornerRadius(21.0)
         .alert(isPresented: $alertIsVisible) {
