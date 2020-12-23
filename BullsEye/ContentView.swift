@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
   @State private var alertIsVisible: Bool = false
-  @State private var knockAlertIsVisible: Bool = false
+  @State private var sliderValue: Double = 50.0
 
   var body: some View {
     VStack {
@@ -26,7 +26,7 @@ struct ContentView: View {
       HStack {
         Text("1")
           .bold()
-        Slider(value: .constant(50), in: 1.0...100.0)
+        Slider(value: self.$sliderValue, in: 1.0...100.0)
         Text("100")
           .bold()
       }
@@ -40,30 +40,13 @@ struct ContentView: View {
           Text("Hit me")
         }
       )
-      .alert(isPresented: $alertIsVisible, content: {
+      .alert(isPresented: $alertIsVisible) {
         return Alert(
           title: Text("Hello there!"),
           message: Text("This is my first pop-up"),
           dismissButton: .default(Text("Awesome!"))
         )
-      })
-
-
-      Button(
-        action: {
-          self.knockAlertIsVisible = true
-        },
-        label: {
-          Text("Knock Knock")
-        }
-      )
-      .alert(isPresented: $knockAlertIsVisible, content: {
-        return Alert(
-          title: Text("Who's there?"),
-          message: Text("Little old lady"),
-          dismissButton: .default(Text("Little old lady who?"))
-        )
-      })
+      }
     }
   }
 }
