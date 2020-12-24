@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PointsView: View {
   var body: some View {
-    VStack {
+    VStack(spacing: 10) {
       InstructionText(text: "The slider's value is")
       BigNumberText(text: "50")
       BodyText(text: "You scored 73 Points\n🎉🎉🎉")
