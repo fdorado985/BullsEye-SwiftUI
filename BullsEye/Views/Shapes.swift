@@ -16,6 +16,7 @@ struct Shapes: View {
         Circle()
           .strokeBorder(Color.blue, lineWidth: 20.0)
           .frame(width: 200, height: 100)
+          .transition(.scale)
       }
 
       RoundedRectangle(cornerRadius: 20.0)
