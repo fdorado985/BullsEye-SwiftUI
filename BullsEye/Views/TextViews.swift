@@ -58,6 +58,7 @@ struct LabelText: View {
 
 struct BodyText: View {
   var text: String
+
   var body: some View {
     Text(text)
       .font(.subheadline)
@@ -70,6 +71,7 @@ struct BodyText: View {
 
 struct ButtonText: View {
   var text: String
+
   var body: some View {
     Text(text)
       .bold()
