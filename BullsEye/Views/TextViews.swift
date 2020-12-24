@@ -45,6 +45,7 @@ struct SliderLabelText: View {
 
 struct LabelText: View {
   var text: String
+
   var body: some View {
     Text(text.uppercased())
       .foregroundColor(Color("TextColor"))
@@ -55,6 +56,34 @@ struct LabelText: View {
   }
 }
 
+struct BodyText: View {
+  var text: String
+  var body: some View {
+    Text(text)
+      .font(.subheadline)
+      .fontWeight(.semibold)
+      .lineSpacing(12.0)
+      .multilineTextAlignment(.center)
+      .foregroundColor(Color("TextColor"))
+  }
+}
+
+struct ButtonText: View {
+  var text: String
+  var body: some View {
+    Text(text)
+      .bold()
+      .padding()
+      .frame(maxWidth: .infinity)
+      .background(
+        Color.accentColor
+      )
+      .foregroundColor(.white)
+      .cornerRadius(12.0)
+
+  }
+}
+
 struct TextViews_Previews: PreviewProvider {
   static var previews: some View {
     VStack {
@@ -62,6 +91,20 @@ struct TextViews_Previews: PreviewProvider {
       BigNumberText(text: "999")
       SliderLabelText(text: "100")
       LabelText(text: "Score")
+      BodyText(text: "You scored 200 Points\n🎉🎉🎉")
+      ButtonText(text: "Start New Round")
     }
+    .padding()
+
+    VStack {
+      InstructionText(text: "Instructions")
+      BigNumberText(text: "999")
+      SliderLabelText(text: "100")
+      LabelText(text: "Score")
+      BodyText(text: "You scored 200 Points\n🎉🎉🎉")
+      ButtonText(text: "Start New Round")
+    }
+    .padding()
+    .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
   }
 }
