@@ -70,7 +70,9 @@ struct HitMeButton: View {
   var body: some View {
     Button(
       action: {
-        alertIsVisible = true
+        withAnimation {
+          alertIsVisible = true
+        }
       },
       label: {
         Text("Hit me!".uppercased())
