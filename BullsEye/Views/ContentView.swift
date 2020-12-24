@@ -61,6 +61,7 @@ struct HitMeButton: View {
     Button(
       action: {
         alertIsVisible = true
+        game.startNewRound(points: game.points(sliderValue: Int(sliderValue)))
       },
       label: {
         Text("Hit me!".uppercased())
