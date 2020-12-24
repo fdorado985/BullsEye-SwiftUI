@@ -22,14 +22,17 @@ struct ContentView: View {
 
         if alertIsVisible {
           PointsView(alertIsVisible: $alertIsVisible, sliderValue: $sliderValue, game: $game)
+            .transition(.scale)
         } else {
           HitMeButton(alertIsVisible: $alertIsVisible, sliderValue: $sliderValue, game: $game)
+            .transition(.scale)
         }
 
       }
 
       if !alertIsVisible {
-      SliderView(sliderValue: $sliderValue)
+        SliderView(sliderValue: $sliderValue)
+          .transition(.scale)
       }
     }
   }
