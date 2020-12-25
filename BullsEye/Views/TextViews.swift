@@ -110,6 +110,18 @@ struct DateText: View {
   }
 }
 
+struct BigBoldText: View {
+  let text: String
+
+  var body: some View {
+    Text(text.uppercased())
+      .font(.title)
+      .kerning(2.0)
+      .foregroundColor(Color("TextColor"))
+      .fontWeight(.black)
+  }
+}
+
 struct TextViews_Previews: PreviewProvider {
   static var previews: some View {
     VStack {
@@ -121,6 +133,7 @@ struct TextViews_Previews: PreviewProvider {
       ButtonText(text: "Start New Round")
       ScoreText(score: 999)
       DateText(date: Date())
+      BigBoldText(text: "Leaderboard")
     }
     .padding()
 
@@ -133,6 +146,7 @@ struct TextViews_Previews: PreviewProvider {
       ButtonText(text: "Start New Round")
       ScoreText(score: 999)
       DateText(date: Date())
+      BigBoldText(text: "Leaderboard")
     }
     .padding()
     .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
