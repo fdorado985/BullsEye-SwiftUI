@@ -19,6 +19,7 @@
 		A984AFB7258FE12C007D8253 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A984AFB6258FE12C007D8253 /* Assets.xcassets */; };
 		A984AFBA258FE12C007D8253 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A984AFB9258FE12C007D8253 /* Preview Assets.xcassets */; };
 		A984AFCA25930A08007D8253 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984AFC925930A08007D8253 /* Game.swift */; };
+		A9FEF1DF25957EA90006F255 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FEF1DE25957EA90006F255 /* LeaderboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		A984AFB9258FE12C007D8253 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A984AFBB258FE12C007D8253 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A984AFC925930A08007D8253 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		A9FEF1DE25957EA90006F255 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				A92C21F12593E7750003F279 /* RoundedViews.swift */,
 				A92C21F52593EF390003F279 /* BackgroundView.swift */,
 				A92C21F925946F850003F279 /* PointsView.swift */,
+				A9FEF1DE25957EA90006F255 /* LeaderboardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9FEF1DF25957EA90006F255 /* LeaderboardView.swift in Sources */,
 				A92C21F22593E7750003F279 /* RoundedViews.swift in Sources */,
 				A984AFB5258FE12C007D8253 /* ContentView.swift in Sources */,
 				A92C21EA2593C0730003F279 /* TextViews.swift in Sources */,
