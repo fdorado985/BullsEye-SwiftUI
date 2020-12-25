@@ -54,6 +54,14 @@ struct RoundRectTextView: View {
   }
 }
 
+struct RoundedTextView: View {
+  let text: String
+
+  var body: some View {
+    Text(text)
+  }
+}
+
 struct PreviewView: View {
   var body: some View {
     VStack(spacing: 10) {
@@ -68,6 +76,7 @@ struct PreviewView: View {
       }
 
       RoundRectTextView(text: "999")
+      RoundedTextView(text: "1")
     }
   }
 }

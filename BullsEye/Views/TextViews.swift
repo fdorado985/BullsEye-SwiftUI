@@ -86,6 +86,22 @@ struct ButtonText: View {
   }
 }
 
+struct ScoreText: View {
+  var score: Int
+
+  var body: some View {
+    Text(String(score))
+  }
+}
+
+struct DateText: View {
+  var date: Date
+
+  var body: some View {
+    Text(date, style: .time)
+  }
+}
+
 struct TextViews_Previews: PreviewProvider {
   static var previews: some View {
     VStack {
@@ -95,6 +111,8 @@ struct TextViews_Previews: PreviewProvider {
       LabelText(text: "Score")
       BodyText(text: "You scored 200 Points\n🎉🎉🎉")
       ButtonText(text: "Start New Round")
+      ScoreText(score: 999)
+      DateText(date: Date())
     }
     .padding()
 
@@ -105,6 +123,8 @@ struct TextViews_Previews: PreviewProvider {
       LabelText(text: "Score")
       BodyText(text: "You scored 200 Points\n🎉🎉🎉")
       ButtonText(text: "Start New Round")
+      ScoreText(score: 999)
+      DateText(date: Date())
     }
     .padding()
     .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
