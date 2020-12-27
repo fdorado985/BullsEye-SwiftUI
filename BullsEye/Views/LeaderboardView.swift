@@ -43,7 +43,19 @@ struct RowView: View {
 
 struct HeaderView: View {
   var body: some View {
-    BigBoldText(text: "Leaderboard")
+    ZStack {
+      BigBoldText(text: "Leaderboard")
+      HStack {
+        Spacer()
+        Button(
+          action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/,
+          label: {
+            RoundedImageViewFilled(systemName: "xmark")
+              .padding(.trailing)
+          }
+        )
+      }
+    }
   }
 }
 
