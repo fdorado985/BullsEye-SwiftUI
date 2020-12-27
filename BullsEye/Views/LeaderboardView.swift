@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct LeaderboardView: View {
+  @Binding var leaderboardIsShowing: Bool
+
   var body: some View {
     ZStack {
       Color("BackgroundColor")
         .edgesIgnoringSafeArea(.all)
       VStack(spacing: 10.0) {
-        HeaderView()
+        HeaderView(leaderboardIsShowing: $leaderboardIsShowing)
         LabelView()
         RowView(index: 1, score: 10, date: Date())
       }
@@ -47,6 +49,7 @@ struct RowView: View {
 }
 
 struct HeaderView: View {
+  @Binding var leaderboardIsShowing: Bool
   @Environment(\.verticalSizeClass) var verticalSizeClass
   @Environment(\.horizontalSizeClass) var horizontalSizeClass
 
@@ -64,7 +67,9 @@ struct HeaderView: View {
       HStack {
         Spacer()
         Button(
-          action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/,
+          action: {
+            leaderboardIsShowing = false
+          },
           label: {
             RoundedImageViewFilled(systemName: "xmark")
               .padding(.trailing)
@@ -94,18 +99,20 @@ struct LabelView: View {
 }
 
 struct LeaderboardView_Previews: PreviewProvider {
+  static private var leaderboardIsShowing = Binding.constant(false)
+
   static var previews: some View {
-    LeaderboardView()
-    LeaderboardView()
+    LeaderboardView(leaderboardIsShowing: leaderboardIsShowing)
+    LeaderboardView(leaderboardIsShowing: leaderboardIsShowing)
       .preferredColorScheme(.dark)
-    LeaderboardView()
+    LeaderboardView(leaderboardIsShowing: leaderboardIsShowing)
       .previewLayout(
         .fixed(
           width: 812,
           height: 375
         )
       )
-    LeaderboardView()
+    LeaderboardView(leaderboardIsShowing: leaderboardIsShowing)
       .preferredColorScheme(.dark)
       .previewLayout(
         .fixed(
