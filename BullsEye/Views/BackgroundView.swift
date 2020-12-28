@@ -47,7 +47,7 @@ struct TopView: View {
         isPresented: $leaderboardIsShowing,
         onDismiss: {},
         content: {
-          LeaderboardView(leaderboardIsShowing: $leaderboardIsShowing)
+          LeaderboardView(leaderboardIsShowing: $leaderboardIsShowing, game: $game)
         }
       )
     }
