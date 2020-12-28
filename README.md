@@ -17,3 +17,19 @@ All the process 'til here will cover creating an app from scratch with the basic
 | SS03 | SS04 |
 | ---- | ---- |
 | ![ss03](.screenshots/ss03.png) | ![ss04](.screenshots/ss04.png) |
+
+# 2-polishing-the-app
+
+On this process you'll notice some new features and an improvement on the design!.
+
+| SS05 | SS08 |
+| ---- | ---- |
+| ![ss05](.screenshots/ss05.png) | ![ss08](.screenshots/ss08.png)
+
+| SS06 | SS09 |
+| ---- | ---- |
+| ![ss06](.screenshots/ss06.png) | ![ss09](.screenshots/ss09.png)
+
+| SS07 | SS10 |
+| ---- | ---- |
+| ![ss07](.screenshots/ss07.png) | ![ss10](.screenshots/ss10.png)
